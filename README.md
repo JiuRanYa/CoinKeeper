@@ -1,6 +1,6 @@
-## CashFlowEase - Simplify Your Finances
+## CoinKeeper - Simplify Your Finances
 
-CashFlowEase is a user-friendly and intuitive mobile application designed to help you effortlessly manage your personal finances and keep track of your expenses. With its streamlined interface and powerful features, CashFlowEase aims to simplify the process of tracking your income, expenses, and budgeting.
+CoinKeeper is a user-friendly and intuitive mobile application designed to help you effortlessly manage your personal finances and keep track of your expenses. With its streamlined interface and powerful features, CashFlowEase aims to simplify the process of tracking your income, expenses, and budgeting.
 
 ### Features
 

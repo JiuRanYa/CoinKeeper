@@ -25,7 +25,7 @@ class _HomePageState extends State<HomePage> {
       ),
       bottomNavigationBar: BottomAppBar(
         child: Container(
-          height: 40,
+          height: 34,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
