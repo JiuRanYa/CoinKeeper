@@ -16,12 +16,24 @@ class CustomStyle<T> {
 }
 
 class _HomePageState extends State<HomePage> {
+  int _count = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
         padding: const EdgeInsets.all(40),
-        child: const Text('123'),
+        child: const Text('默认账单'),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () => setState(() => _count++),
+        tooltip: 'Increment Counter',
+        backgroundColor: Colors.orange,
+        child: SvgPicture.asset(
+          'static/images/plus.svg',
+          height: 28,
+          width: 28,
+        ),
       ),
       bottomNavigationBar: BottomAppBar(
         child: Container(
