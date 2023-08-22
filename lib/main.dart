@@ -19,12 +19,6 @@ class MainApp extends StatefulWidget {
 class _MainApp extends State<MainApp> {
   int _selectedIndex = 0;
 
-  void _onItemTapped(int index) {
-    setState(() {
-      _selectedIndex = index;
-    });
-  }
-
   static const List<Widget> _router = <Widget>[
     HomePage(),
     RecordPage(),
@@ -52,16 +46,19 @@ class _MainApp extends State<MainApp> {
         splashFactory: NoSplash.splashFactory,
       ),
       home: Scaffold(
-        body: _router.elementAt(_selectedIndex),
+        body: Padding(
+          padding: const EdgeInsets.only(top: 60.0, left: 40.0),
+          child: _router.elementAt(_selectedIndex),
+        ),
         bottomNavigationBar: BottomNavigationBar(
           type: BottomNavigationBarType.fixed,
           items: <BottomNavigationBarItem>[
             _buildBottomBarItem(
-                '流水', 'static/images/bottom1.svg', CustomStyle(26, 26)),
+                '账单', 'static/images/bottom1.svg', CustomStyle(26, 26)),
             _buildBottomBarItem(
                 '流水', 'static/images/bottom2.svg', CustomStyle(26, 26)),
             _buildBottomBarItem(
-                '流水', 'static/images/bottom3.svg', CustomStyle(26, 26)),
+                '成员', 'static/images/bottom3.svg', CustomStyle(26, 26)),
             _buildBottomBarItem(
                 '设置', 'static/images/bottom4.svg', CustomStyle(24, 24)),
           ],
@@ -76,4 +73,11 @@ class _MainApp extends State<MainApp> {
       ),
     );
   }
+}
+
+class CustomStyle<T> {
+  T? height;
+  T? width;
+
+  CustomStyle(this.height, this.width);
 }
