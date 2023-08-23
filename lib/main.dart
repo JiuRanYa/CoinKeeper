@@ -47,7 +47,7 @@ class _MainApp extends State<MainApp> {
       ),
       home: Scaffold(
         body: Padding(
-          padding: const EdgeInsets.only(top: 60.0, left: 40.0),
+          padding: const EdgeInsets.only(top: 80, left: 40, right: 40),
           child: _router.elementAt(_selectedIndex),
         ),
         bottomNavigationBar: BottomNavigationBar(
